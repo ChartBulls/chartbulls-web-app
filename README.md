@@ -1,2 +1,2 @@
-# chartbulls-web
-Chartbulls Web App
+# chartbulls-web-app
+ChartBulls Web App
