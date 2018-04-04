@@ -10,8 +10,13 @@
 from flask import Flask
 
 
-app = Flask(__name__)
+# Creating the Flask app
+app = Flask(__name__,
+            template_folder='../frontend',
+            static_folder='../frontend')
+            
+# Configuring the app from config module
+app.config.from_pyfile('config.py')
 
-@app.route("/")
-def hello():
-    return "<h1>ChartBulls Web App</h1>"
+# Importing the app views
+from backend import views
