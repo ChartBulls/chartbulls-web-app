@@ -13,5 +13,5 @@
 import os
 
 
-# Flask configuration values
+# Flask
 DEBUG = os.environ.get('DEBUG', True)
